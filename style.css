@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6fa;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Calibration screen */
+#calibration {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: space-between;
+  position: absolute;
+  background: #000000dd;
+  z-index: 10;
+}
+.calib-point {
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+  margin: 30px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+#startBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Communication board */
+#board {
+  display: none;
+  grid-template-columns: repeat(3, 220px);
+  gap: 60px;
+  background: #fff;
+  padding: 60px;
+  border-radius: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+.icon {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  background: #e4ebf5;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+}
+.icon span {
+  margin-top: 10px;
+  font-size: 22px;
+}
+.icon.active {
+  background: #4cafef;
+  color: white;
+  transform: scale(1.08);
+}
