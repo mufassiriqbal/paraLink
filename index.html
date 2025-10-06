@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Communication Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Calibration -->
+  <div id="calibration">
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <div class="calib-point"></div>
+    <button id="startBtn">Start Communication Board</button>
+  </div>
+
+  <!-- Communication board -->
+  <div id="board">
+    <div class="icon" data-text="I need food">🍽 <span>Eat</span></div>
+    <div class="icon" data-text="I need water">💧 <span>Drink</span></div>
+    <div class="icon" data-text="I am in pain">🤕 <span>Pain</span></div>
+    <div class="icon" data-text="I am happy">😊 <span>Happy</span></div>
+    <div class="icon" data-text="I am sad">😢 <span>Sad</span></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+  <script src="ai.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
