@@ -3,7 +3,7 @@ async function generateResponse(shortText) {
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "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",  // <-- put your Groq API key here
+        "Authorization": "useapi",  // <-- put your Groq API key here
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
@@ -24,3 +24,4 @@ async function generateResponse(shortText) {
     return shortText; // fallback
   }
 }
+
